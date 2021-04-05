@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+blunt = Category.create(name: "Blunt")
+sharp = Category.create(name: "Sharp")
+projectile = Category.create(name: "Projectile")
+legendary = Category.create(name: "Legendary")
+nonconformist= Category.create(name: "Nonconformist")
