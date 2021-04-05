@@ -1,0 +1,9 @@
+features to add beyond basic:
+-- image upload with cloudinary
+-- video URL 
+
+
+seed data:
+-- 6 categories (will be dropdown access on form)
+-- 2-3 weapons for each category (need photos to upload)
+
