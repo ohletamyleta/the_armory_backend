@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_05_190502) do
+ActiveRecord::Schema.define(version: 2021_04_06_130944) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,10 +25,12 @@ ActiveRecord::Schema.define(version: 2021_04_05_190502) do
     t.string "name"
     t.string "description"
     t.string "video_url"
-    t.integer "category_id"
     t.string "origin"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_weapons_on_category_id"
   end
 
+  add_foreign_key "weapons", "categories"
 end
