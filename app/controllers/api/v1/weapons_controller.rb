@@ -2,7 +2,7 @@ class Api::V1::WeaponsController < ApplicationController
 
   def index
     weapons = Weapon.all 
-    render json: weapons
+    render json: WeaponSerializer.new(weapons)
   end
 
   def create
