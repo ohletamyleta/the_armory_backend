@@ -1,7 +1,7 @@
 class Api::V1::WeaponsController < ApplicationController
 
   def index
-    @weapons = WEapon.allocaterender json: @weapons
+    @weapons = Weapon.all render json: @weapons
   end
 
   def create
