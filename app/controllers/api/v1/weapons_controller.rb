@@ -17,7 +17,7 @@ class Api::V1::WeaponsController < ApplicationController
   private
 
     def weapon_params
-      params.permit(:name, :description, :video_url, :category_id, :origin)
+      params.permit(:name, :description, :video_url, :category_id, :origin, :image)
     end
 
 
