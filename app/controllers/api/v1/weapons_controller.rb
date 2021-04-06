@@ -6,9 +6,9 @@ class Api::V1::WeaponsController < ApplicationController
   end
 
   def create
-    weapon.new(weapon_params)
+    weapon = Weapon.new(weapon_params)
     if weapon.save
-      render json: weapon, status: :accepted
+      render json: WeaponSerializer.new(weapon), status: :accepted
     else
       render json: { errors: weapon.errors.full_messages }, status: :unprocessible_entity
     end 
