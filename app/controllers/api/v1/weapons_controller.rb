@@ -33,7 +33,7 @@ class Api::V1::WeaponsController < ApplicationController
     end
 
     def find_weapon
-      @weapon = Weapon.find(params[:id]W
+      @weapon = Weapon.find(params[:id])
     end
 
 
