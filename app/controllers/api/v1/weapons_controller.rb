@@ -17,7 +17,7 @@ class Api::V1::WeaponsController < ApplicationController
   end
 
   def update
-    @weapon.update(weapon_params)
+    # @weapon.update(weapon_params)
     if @weapon.save
       render json: @weapon, status: :accepted
     else
