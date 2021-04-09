@@ -3,7 +3,7 @@ class Api::V1::WeaponsController < ApplicationController
   before_action :find_weapon, only: [:update, :destroy]
 
   def index
-    weapons = Weapon.all 
+    weapons = Weapon.all
     render json: WeaponSerializer.new(weapons)
   end
 
