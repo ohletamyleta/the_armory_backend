@@ -1,6 +1,6 @@
 class Api::V1::WeaponsController < ApplicationController
 
-  before_action :find_weapon, only: [:update]
+  before_action :find_weapon, only: [:update, :destroy]
 
   def index
     weapons = Weapon.all 
@@ -25,12 +25,12 @@ class Api::V1::WeaponsController < ApplicationController
     end 
   end 
 
+ 
 
   private
 
     def weapon_params
-      params.require(:weapon).permit(:name, :description, :video_url, :category_id, :origin, :image_url, :id)
-      # , weapon: [:name, :description, :video_url, :origin, :image_url, :category_id])
+      params.permit(:name, :description, :video_url, :category_id, :origin, :image_url, :id)
     end
 
     def find_weapon
