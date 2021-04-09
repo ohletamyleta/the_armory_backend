@@ -4,8 +4,9 @@ class CreateWeapons < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :description
       t.string :video_url
+      t.string :image_url
       t.string :origin
-
+      t.belongs_to(:category, foreign_key: true)
       t.timestamps
     end
   end

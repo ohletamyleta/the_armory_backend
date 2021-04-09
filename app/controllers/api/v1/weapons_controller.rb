@@ -29,7 +29,8 @@ class Api::V1::WeaponsController < ApplicationController
   private
 
     def weapon_params
-      params.permit(:name, :description, :video_url, :category_id, :origin, :image_url)
+      params.require(:weapon).permit(:name, :description, :video_url, :category_id, :origin, :image_url, :id)
+      # , weapon: [:name, :description, :video_url, :origin, :image_url, :category_id])
     end
 
     def find_weapon
