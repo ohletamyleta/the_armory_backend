@@ -25,7 +25,9 @@ class Api::V1::WeaponsController < ApplicationController
     end 
   end 
 
- 
+  def destroy
+    @weapon.destroy
+  end 
 
   private
 
