@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dhsgriw9g
+  api_key: '255973968288493'
+  api_secret: hLmcfEFSL_kRcQmOqvc6XJ9XF2Y
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dhsgriw9g
+  api_key: '255973968288493'
+  api_secret: hLmcfEFSL_kRcQmOqvc6XJ9XF2Y
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dhsgriw9g
+  api_key: '255973968288493'
+  api_secret: hLmcfEFSL_kRcQmOqvc6XJ9XF2Y
+  enhance_image_tag: true
+  static_file_support: false
